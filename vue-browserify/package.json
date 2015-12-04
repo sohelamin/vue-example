@@ -1,0 +1,38 @@
+{
+    "name": "vueify-example",
+    "version": "1.0.0",
+    "description": "Example using Browserify with vueify",
+    "main": "index.js",
+    "scripts": {
+        "dev": "watchify -vd -p browserify-hmr -t vueify -e src/main.js -o build/build.js & http-server -c 1 -a localhost",
+        "build": "cross-env NODE_ENV=production ./node_modules/watchify/node_modules/.bin/browserify -t vueify -e src/main.js | uglifyjs -c warnings=false -m > build/build.js"
+    },
+    "author": "Evan You",
+    "license": "MIT",
+    "dependencies": {
+        "vue": "^1.0.10"
+    },
+    "devDependencies": {
+        "babel-plugin-transform-runtime": "^6.1.18",
+        "babel-preset-es2015": "^6.1.18",
+        "babel-runtime": "^6.1.18",
+        "browserify-hmr": "^0.3.1",
+        "cross-env": "^1.0.5",
+        "http-server": "^0.8.5",
+        "uglify-js": "^2.6.1",
+        "vue-hot-reload-api": "^1.2.2",
+        "vueify": "^7.0.0",
+        "vueify-insert-css": "^1.0.0",
+        "watchify": "^3.6.1"
+    }
+}
+
+
+
+
+
+
+
+
+
+
