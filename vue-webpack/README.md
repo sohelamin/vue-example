@@ -1,4 +1,4 @@
-# VueJs Examples with Webpack
+# VueJs Example with Webpack
 
 > Example using VueJs with Webpack + vue-loader.
 

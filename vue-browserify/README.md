@@ -1,4 +1,4 @@
-# VueJs Examples with Browserify
+# VueJs Example with Browserify
 
 > Example using VueJs with Browserify + vueify.
 
