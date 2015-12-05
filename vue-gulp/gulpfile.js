@@ -44,7 +44,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('start-server', function() {
-    connect.server({ root: 'dist', livereload: true });
+    connect.server({ port: 8081, livereload: true });
 });
 
 gulp.task('watch:js', function() {
