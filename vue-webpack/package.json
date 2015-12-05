@@ -1,12 +1,12 @@
 {
-    "name": "vue-example",
+    "name": "vue-webpack",
     "version": "1.0.0",
     "description": "Example using Webpack with vue-loader",
     "author": "Sohel Amin",
     "license": "MIT",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack-dev-server --inline --hot --quite",
+        "dev": "webpack-dev-server --inline --hot --quiet",
         "build": "NODE_ENV=production webpack --progress --hide-modules"
     },
     "dependencies": {

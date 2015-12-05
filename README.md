@@ -6,6 +6,7 @@
 * [Simple example](https://github.com/sohelamin/vue-example/blob/master/index.html)
 * [Browserify example](https://github.com/sohelamin/vue-example/tree/master/vue-browserify)
 * [Webpack example](https://github.com/sohelamin/vue-example/tree/master/vue-webpack)
+* [Gulp example](https://github.com/sohelamin/vue-example/tree/master/vue-gulp)
 
 ##Author
 [Sohel Amin](http://www.sohelamin.com)

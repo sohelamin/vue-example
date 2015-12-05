@@ -3,8 +3,8 @@ var webpack = require('webpack')
 module.exports = {
     entry: './src/main.js',
     output: {
-        path: './build',
-        publicPath: 'build/',
+        path: './dist',
+        publicPath: 'dist/',
         filename: 'build.js'
     },
     module: {
