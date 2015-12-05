@@ -1,4 +1,4 @@
-# VueJs Example with Browserify | Webpack
+# VueJs Example with Browserify | Webpack | Gulp
 
 > Example using VueJs with Browserify + vueify, Webpack + vue-loader & Gulp + vueify.
 
