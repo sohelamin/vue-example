@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var copy = require('gulp-copy');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var sourcemaps = require('gulp-sourcemaps');
 var connect = require('gulp-connect');
 var browserify = require('browserify');
 var vueify = require('vueify')
@@ -22,23 +21,13 @@ gulp.task('css', function() {
 gulp.task('js', function() {
     browserify({
         entries: 'src/main.js',
-        debug: true
+        debug: false
     })
     .transform(vueify)
     .bundle()
-    .on('error', function (err) {
-        console.log(err.toString());
-        this.emit("end");
-    })
     .pipe(source('build.js'))
     .pipe(buffer())
-    .pipe(sourcemaps.init({ loadMaps: true }))
-        .pipe(uglify())
-        .on('error', function (err) {
-            console.log(err.toString());
-            this.emit("end");
-        })
-    .pipe(sourcemaps.write())
+    .pipe(uglify())
     .pipe(gulp.dest('dist'))
     .pipe(connect.reload());
 });
