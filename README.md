@@ -9,7 +9,7 @@
 * [Browserify example](https://github.com/sohelamin/vue-example/tree/master/vue-browserify)
 * [Webpack example](https://github.com/sohelamin/vue-example/tree/master/vue-webpack)
 * [Gulp example](https://github.com/sohelamin/vue-example/tree/master/vue-gulp)
-* [Gulp example](https://github.com/sohelamin/vue-example/tree/master/vue-partialify)
+* [Partialify example](https://github.com/sohelamin/vue-example/tree/master/vue-partialify)
 
 ##Author
 [Sohel Amin](http://www.sohelamin.com)

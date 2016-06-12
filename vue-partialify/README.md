@@ -8,11 +8,7 @@
 # node packages
 npm install
 
-# dev server at localhost:8081 with hot reload
 npm run dev
-
-# production build
-npm run build
 ```
 
 ##Author
