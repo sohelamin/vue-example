@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Vue Simple Example</title>
+        <title>Vue.js Simple Example</title>
     </head>
     <style>
         body {
@@ -23,31 +23,31 @@
         }
     </style>
     <body>
-        <div class="container">
+        <div id="app" class="container">
             <app></app>
 
-            <template id="app-template">
+            <script type="text/x-template" id="app-template">
                 <div>
                     <h1>{{msg}}</h1>
                     <clock></clock>
                 </div>
-            </template>
+            </script>
 
-            <template id="clock-template">
+            <script type="text/x-template" id="clock-template">
                 <div class="clock">
                     <h1>{{time}}</h1>
                 </div>
-            </template>
+            </script>
         </div>
 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.15/vue.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js"></script>
         <script>
             // App component
             Vue.component('app', {
                 template: '#app-template',
-                data () {
+                data: function () {
                     return {
-                        msg: 'Welcome to VueJs World!'
+                        msg: 'Welcome to Vue.js World!'
                     }
                 }
             });
@@ -55,10 +55,10 @@
             // Clock component
             Vue.component('clock', {
                 template: '#clock-template',
-                data () {
+                data: function () {
                     return { time: "00:00:00" }
                 },
-                ready () {
+                mounted: function () {
                     this.startTime()
                 },
                 methods: {
@@ -82,7 +82,7 @@
 
             // create a root instance
             new Vue({
-                el: 'body'
+                el: '#app'
             })
         </script>
     </body>

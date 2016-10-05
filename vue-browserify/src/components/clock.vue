@@ -1,6 +1,6 @@
 <template>
     <div class="clock">
-        <h1>{{time}}</h1>
+        <h1>{{ time }}</h1>
     </div>
 </template>
 
@@ -9,11 +9,11 @@
         data () {
             return { time: "00:00:00" }
         },
-        ready () {
+        mounted () {
             this.startTime()
         },
         methods: {
-            startTime: function () {
+            startTime () {
                 var today = new Date();
                 var h = today.getHours();
                 var m = today.getMinutes();
@@ -24,7 +24,7 @@
                 this.time = h + ":" + m + ":" + s;
                 var t = setTimeout(this.startTime, 500);
             },
-            checkTime: function (i) {
+            checkTime (i) {
                 if (i < 10) {i = "0" + i};
                 return i;
             }

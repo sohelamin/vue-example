@@ -1,9 +1,7 @@
-var Vue = require('vue')
-var App = require('./app.vue')
+const Vue = require('vue')
+const App = require('./app.vue')
 
 new Vue({
-    el: 'body',
-    components: {
-        app: App
-    }
+    el: '#app',
+    render: h => h(App)
 })
