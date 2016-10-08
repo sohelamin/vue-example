@@ -11,7 +11,7 @@
     export default {
         data () {
             return {
-                msg: 'Welcome to VueJs World!'
+                msg: 'Welcome to Vue.js World!'
             }
         },
         components: {

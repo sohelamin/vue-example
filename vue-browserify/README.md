@@ -1,6 +1,6 @@
-# VueJs Example with Browserify
+# Vue.js Example with Browserify
 
-> Example using VueJs with Browserify + vueify.
+> Example using Vue.js with Browserify + vueify.
 
 ## Instructions
 
@@ -15,5 +15,5 @@ npm run dev
 npm run build
 ```
 
-##Author
+## Author
 [Sohel Amin](http://www.sohelamin.com)

@@ -1,15 +1,16 @@
-# VueJs Example with Browserify | Webpack | Gulp
+# Vue.js Example with Browserify | Webpack | Rollup
 
-> Example using VueJs with Browserify + vueify, Webpack + vue-loader & Gulp + vueify.
+> Example using Vue.js with Browserify / Webpack / Rollup.
 
 ## [Demo](http://sohelamin.github.io/vue-example/)
 
 ## Examples
-* [Simple example](https://github.com/sohelamin/vue-example/blob/master/index.html)
-* [Browserify example](https://github.com/sohelamin/vue-example/tree/master/vue-browserify)
-* [Webpack example](https://github.com/sohelamin/vue-example/tree/master/vue-webpack)
-* [Gulp example](https://github.com/sohelamin/vue-example/tree/master/vue-gulp)
-* [Partialify example](https://github.com/sohelamin/vue-example/tree/master/vue-partialify)
+* [Simple Example](https://github.com/sohelamin/vue-example/blob/master/index.html)
+* [Browserify Example](https://github.com/sohelamin/vue-example/tree/master/vue-browserify)
+* [Webpack Example](https://github.com/sohelamin/vue-example/tree/master/vue-webpack)
+* [Rollup Example](https://github.com/sohelamin/vue-example/tree/master/vue-rollup)
+* [Rollup Simple Example](https://github.com/sohelamin/vue-example/tree/master/vue-rollup-simple)
 
-##Author
+
+## Author
 [Sohel Amin](http://www.sohelamin.com)
