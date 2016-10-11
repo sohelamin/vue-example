@@ -7,7 +7,7 @@ import commonjs from 'rollup-plugin-commonjs'
 
 export default {
     entry: 'src/main.js',
-    format: 'cjs',
+    format: 'iife',
     plugins: [
         string({
             include: '**/*.html',
@@ -20,7 +20,7 @@ export default {
             main: true,
             browser: true
         }),
-        commonjs(),
+        commonjs()
     ],
     dest: 'dist/build.js'
 }
