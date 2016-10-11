@@ -1,4 +1,3 @@
-(function () {
 'use strict';
 
 var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
@@ -7459,5 +7458,3 @@ new vue({
     el: '#app',
     render: function (h) { return h(App); }
 })
-
-}());

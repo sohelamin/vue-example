@@ -15,5 +15,5 @@ npm run dev
 npm run build
 ```
 
-## Author
+##Author
 [Sohel Amin](http://www.sohelamin.com)

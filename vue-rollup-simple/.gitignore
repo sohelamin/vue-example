@@ -1,4 +1,4 @@
 **/.DS_Store
 node_modules
-dist/style.css
 dist/build.js
+dist/style.css
