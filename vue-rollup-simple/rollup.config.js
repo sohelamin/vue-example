@@ -1,24 +1,30 @@
-import string from 'rollup-plugin-string';
-import json from 'rollup-plugin-json';
-import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
+import string from 'rollup-plugin-string'
+import json from 'rollup-plugin-json'
+import css from 'rollup-plugin-css-only'
+import buble from 'rollup-plugin-buble'
+import nodeResolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import nodeGlobals from 'rollup-plugin-node-globals'
 
 export default {
     entry: 'src/main.js',
-    format: 'cjs',
+    format: 'iife',
     plugins: [
         string({
             include: '**/*.html',
         }),
         json(),
-        babel({compact: false}),
-        resolve({
+        css({ output: 'dist/style.css' }),
+        buble({
+            objectAssign: 'Object.assign'
+        }),
+        nodeResolve({
             jsnext: true,
             main: true,
             browser: true
         }),
-        commonjs({ include: 'node_modules/**' }),
+        commonjs(),
+        nodeGlobals(),
     ],
     dest: 'dist/build.js'
-};
+}

@@ -1,15 +1,12 @@
-# Vue.js Example with Webpack
+# Vue.js Example with Rollup
 
-> Example using Vue.js with Webpack + vue-loader.
+> Example using Vue.js with Rollup.
 
 ## Instructions
 
 ``` bash
 # node packages
 npm install
-
-# dev server at localhost:8081 with hot reload
-npm run dev
 
 # production build
 npm run build

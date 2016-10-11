@@ -1,12 +1,12 @@
-import buble from 'rollup-plugin-buble';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import uglify from 'rollup-plugin-uglify';
-import { minify } from 'uglify-js';
-import vue from 'rollup-plugin-vue';
-import nodeGlobals from 'rollup-plugin-node-globals';
-import livereload from 'rollup-plugin-livereload';
-import serve from 'rollup-plugin-serve';
+import buble from 'rollup-plugin-buble'
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import uglify from 'rollup-plugin-uglify'
+import { minify } from 'uglify-js'
+import vue from 'rollup-plugin-vue'
+import nodeGlobals from 'rollup-plugin-node-globals'
+import livereload from 'rollup-plugin-livereload'
+import serve from 'rollup-plugin-serve'
 
 const config = {
     entry: 'src/main.js',
