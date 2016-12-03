@@ -1,10 +1,9 @@
+import vue from 'rollup-plugin-vue2'
+import scss from 'rollup-plugin-scss'
 import buble from 'rollup-plugin-buble'
-import resolve from 'rollup-plugin-node-resolve'
+import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import uglify from 'rollup-plugin-uglify'
-import { minify } from 'uglify-js'
-import vue from 'rollup-plugin-vue'
-import nodeGlobals from 'rollup-plugin-node-globals'
 import livereload from 'rollup-plugin-livereload'
 import serve from 'rollup-plugin-serve'
 
@@ -16,22 +15,16 @@ const config = {
     useStrict: false,
     plugins: [
         vue(),
-        buble({
-            objectAssign: 'Object.assign'
-        }),
-        resolve({
-            jsnext: true,
-            main: true,
-            browser: true
-        }),
-        commonjs(),
-        nodeGlobals(),
+        scss(),
+        buble({ exclude: 'node_modules/**' }),
+        nodeResolve({ browser: true, jsnext: true }),
+        commonjs()
     ]
 }
 
 if (process.env.NODE_ENV === 'production') {
     config.sourceMap = false
-    config.plugins.push(uglify({}, minify))
+    config.plugins.push(uglify())
 }
 
 if (process.env.NODE_ENV === 'development') {

@@ -1,5 +1,2 @@
-**/.DS_Store
+.DS_Store
 node_modules
-dist/build.css
-dist/build.js
-dist/build.js.map
