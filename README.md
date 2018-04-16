@@ -9,7 +9,6 @@
 * [Browserify Example](https://github.com/sohelamin/vue-example/tree/master/vue-browserify)
 * [Webpack Example](https://github.com/sohelamin/vue-example/tree/master/vue-webpack)
 * [Rollup Example](https://github.com/sohelamin/vue-example/tree/master/vue-rollup)
-* [Rollup Simple Example](https://github.com/sohelamin/vue-example/tree/master/vue-rollup-simple)
 
 ## Author
 [Sohel Amin](http://www.sohelamin.com)

@@ -5,15 +5,15 @@
 ## Instructions
 
 ``` bash
-# node packages
+# install dependencies
 npm install
 
-# dev server at localhost:8081 with hot reload
-npm run dev
+# dev server at localhost:8080 with hot reload
+npm run serve
 
 # production build
 npm run build
 ```
 
-##Author
+## Author
 [Sohel Amin](http://www.sohelamin.com)
