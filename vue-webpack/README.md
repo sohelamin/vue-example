@@ -1,6 +1,6 @@
-# Vue.js Example with Webpack
+# Vue.js Example
 
-> Example using Vue.js with Webpack + vue-loader.
+> Example using Vue.js with Webpack.
 
 ## Instructions
 

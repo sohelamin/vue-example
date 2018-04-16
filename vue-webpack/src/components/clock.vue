@@ -14,22 +14,22 @@
     },
     methods: {
       startTime () {
-        var today = new Date();
-        var h = today.getHours();
-        var m = today.getMinutes();
-        var s = today.getSeconds();
+        let today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
         m = this.checkTime(m);
         s = this.checkTime(s);
 
         this.time = h + ":" + m + ":" + s;
-        var t = setTimeout(this.startTime, 500);
+        let t = setTimeout(this.startTime, 500);
       },
       checkTime (i) {
         if (i < 10) {i = "0" + i};
         return i;
       }
     }
-  }
+  };
 </script>
 
 <style>

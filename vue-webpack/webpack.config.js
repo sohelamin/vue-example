@@ -1,16 +1,12 @@
-const path = require('path')
-const webpack = require('webpack')
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, './public'),
-    publicPath: '/public/',
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/dist/',
     filename: 'build.js'
-  },
-  devServer: {
-    contentBase: './public',
-    hot: true
   },
   resolve: {
     alias: {
@@ -38,7 +34,7 @@ module.exports = {
       }
     ]
   }
-}
+};
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.plugins = [
@@ -47,7 +43,7 @@ if (process.env.NODE_ENV === 'production') {
         NODE_ENV: '"production"'
       }
     })
-  ]
+  ];
 } else {
-  module.exports.devtool = '#source-map'
+  module.exports.devtool = '#source-map';
 }

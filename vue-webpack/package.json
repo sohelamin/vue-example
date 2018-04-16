@@ -1,6 +1,6 @@
 {
   "name": "vue-webpack",
-  "description": "Example using Webpack with vue-loader",
+  "description": "Example using Webpack",
   "author": "Sohel Amin",
   "private": true,
   "main": "main.js",

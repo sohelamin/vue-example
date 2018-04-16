@@ -1,15 +1,15 @@
-# Vue.js Example with Rollup
+# Vue.js Example
 
 > Example using Vue.js with Rollup.
 
 ## Instructions
 
 ``` bash
-# node packages
+# install dependencies
 npm install
 
-# dev server at localhost:8081
-npm run dev
+# dev server at localhost:8080
+npm run serve
 
 # production build
 npm run build
