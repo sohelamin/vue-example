@@ -1,89 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Vue.js Simple Example</title>
-    </head>
-    <style>
-        body {
-            font : 100% Helvetica, sans-serif;
-            color: #ecf0f1;
-            text-align: center;
-            background-color: #34495e;
-        }
-        .container {
-            margin: 0 auto;
-            padding-top: 70px;
-        }
-        .clock {
-            color: #C03763;
-            font-size: 48px;
-            line-height: 1.1em;
-            margin: 40px 0 60px;
-        }
-    </style>
-    <body>
-        <div id="app" class="container">
-            <app></app>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js Simple Example</title>
+  </head>
+  <style>
+    body {
+      font : 100% Helvetica, sans-serif;
+      color: #ecf0f1;
+      text-align: center;
+      background-color: #34495e;
+    }
+    .container {
+      margin: 0 auto;
+      padding-top: 70px;
+    }
+    .clock {
+      color: #C03763;
+      font-size: 48px;
+      line-height: 1.1em;
+      margin: 40px 0 60px;
+    }
+  </style>
+  <body>
+    <div id="app" class="container">
+        <app></app>
 
-            <script type="text/x-template" id="app-template">
-                <div>
-                    <h1>{{ msg }}</h1>
-                    <clock></clock>
-                </div>
-            </script>
-
-            <script type="text/x-template" id="clock-template">
-                <div class="clock">
-                    <h1>{{ time }}</h1>
-                </div>
-            </script>
-        </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js"></script>
-        <script>
-            // App component
-            Vue.component('app', {
-                template: '#app-template',
-                data: function () {
-                    return {
-                        msg: 'Welcome to Vue.js World!'
-                    }
-                }
-            });
-
-            // Clock component
-            Vue.component('clock', {
-                template: '#clock-template',
-                data: function () {
-                    return { time: "00:00:00" }
-                },
-                mounted: function () {
-                    this.startTime()
-                },
-                methods: {
-                    startTime: function () {
-                        var today = new Date();
-                        var h = today.getHours();
-                        var m = today.getMinutes();
-                        var s = today.getSeconds();
-                        m = this.checkTime(m);
-                        s = this.checkTime(s);
-
-                        this.time = h + ":" + m + ":" + s;
-                        var t = setTimeout(this.startTime, 500);
-                    },
-                    checkTime: function (i) {
-                        if (i < 10) {i = "0" + i};
-                        return i;
-                    }
-                }
-            });
-
-            // create a root instance
-            new Vue({
-                el: '#app'
-            })
+        <script type="text/x-template" id="app-template">
+          <div>
+            <h1>{{ msg }}</h1>
+            <clock></clock>
+          </div>
         </script>
-    </body>
+
+        <script type="text/x-template" id="clock-template">
+          <div class="clock">
+            <h1>{{ time }}</h1>
+          </div>
+        </script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        // App component
+        Vue.component('app', {
+          template: '#app-template',
+          data: function () {
+            return {
+              msg: 'Welcome to Vue.js World!'
+            }
+          }
+        });
+
+        // Clock component
+        Vue.component('clock', {
+          template: '#clock-template',
+          data: function () {
+            return { time: "00:00:00" }
+          },
+          mounted: function () {
+            this.startTime()
+          },
+          methods: {
+            startTime: function () {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = this.checkTime(m);
+              s = this.checkTime(s);
+
+              this.time = h + ":" + m + ":" + s;
+              var t = setTimeout(this.startTime, 500);
+            },
+            checkTime: function (i) {
+              if (i < 10) {i = "0" + i};
+              return i;
+            }
+          }
+        });
+
+        // Create a root instance
+        new Vue({
+          el: '#app'
+        });
+    </script>
+  </body>
 </html>
